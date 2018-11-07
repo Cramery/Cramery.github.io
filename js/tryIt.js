@@ -37,7 +37,7 @@ function changeColor(color){
 	document.getElementById('kidName3').style.color = color;
 	document.getElementById('kidName4').style.color = color;
 	document.getElementById('kidName5').style.color = color;
-	
+	document.getElementById('kidName6').style.color = color;
 }
 
 function loadPic(selected){
