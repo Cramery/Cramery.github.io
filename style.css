@@ -37,6 +37,31 @@ select, input {
   border:1px solid #AAAAAA;
   width: 250px;}
 
+.colorPicker {
+	width: 40px;
+	background: red;
+} 
+ 
+option.red {
+	background-color: red;
+}
+
+option.blue {
+	background-color: blue;
+}
+
+option.green {
+	background-color: green;
+}
+
+option.black {
+	background-color: black;
+}
+
+option.white {
+	background-color: white;
+}
+
 a,
 a:hover,
 a:focus {
@@ -106,7 +131,7 @@ img {
   transition: .5s ease;
   backface-visibility: hidden;
   padding: 5px;
-  max-height:200px
+  max-height:200px;
 }
 
 .motiv {
@@ -126,6 +151,10 @@ img {
 }
 
 .cont:hover .image {
+  opacity: 0.3;
+}
+
+.cont:hover .motiv {
   opacity: 0.3;
 }
 

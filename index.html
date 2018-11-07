@@ -94,7 +94,7 @@
 						<div class="text" id="PandaMotiv">Panda</div>
 					</div>
 				</div>
-				<div class="cont"">
+				<div class="cont">
 					<img src="img/Motive/Pumuckl.jpeg" alt="Cool Cat" class="motiv" id="PumiMotiv">
 					<div class="middle">
 						<div class="text" id="PumiMotiv">PUMUCKL 😍😍😍</div>
@@ -174,37 +174,47 @@
 				  <option value="otter">Panda</option>
 				</select> <br /><br />
 				<div ng-app="TryItApp", ng-controller="TryItController">
-					<input type="text" name="FirstName" value="" placeholder="Name eingeben" ng-model="name" ng-keyup="NameChange()"> <br /><br />
+					<input type="text" name="FirstName" value="" placeholder="Name eingeben" ng-model="name" ng-keyup="NameChange()"> 
+					
+					<select class="colorPicker" name="Color" size="1" id="Color">
+					  <option class="red" value="red"> &nbsp; </option>
+					  <option class="green" value="green"> &nbsp; </option>
+					  <option class="blue" value="blue"> &nbsp; </option>
+					  <option class="black" value="black"> &nbsp; </option>
+					  <option class="white" value="white"> &nbsp; </option>
+					</select>
+					
+					<br /><br />
 					<div class="tryContainer">
 					
 						<div id="noPic">
 						  <img src="img/Motive/noPic.png" alt="noPic" style="height:200px;">
-						  <div class="tryText">{{name}}</div>
+						  <div id="kidName" class="tryText">{{name}}</div>
 						</div>
 						
 						<div id="Cat">
 						  <img src="img/Motive/Cat.jpg" alt="Cat" style="height:500px;">
-						  <div class="tryText">{{name}}</div>
+						  <div id="kidName2" class="tryText">{{name}}</div>
 						</div>
 						
 						<div id="Dog">
 						  <img src="img/Motive/Dog.jpg" alt="Dog" style="height:500px;">
-						  <div class="tryText">{{name}}</div>
+						  <div id="kidName3" class="tryText">{{name}}</div>
 						</div>
 						
 						<div id="Pinguin">
 						  <img src="img/Motive/Pinguin.png" alt="Pinguin" style="height:500px;">
-						  <div class="tryText">{{name}}</div>
+						  <div id="kidName4" class="tryText">{{name}}</div>
 						</div>
 						
 						<div id="Ott">
 						  <img src="img/Motive/Otter.jpg" alt="Otter" style="height:500px;">
-						  <div class="tryText">{{name}}</div>
+						  <div id="kidName" class="tryText">{{name}}</div>
 						</div>
 						
 						<div id="Panda">
 						  <img src="img/Motive/Panda.jpg" alt="Panda" style="height:500px;">
-						  <div class="tryText">{{name}}</div>
+						  <div id="kidName" class="tryText">{{name}}</div>
 						</div>
 					</div>
 				</div>

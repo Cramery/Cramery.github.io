@@ -4,10 +4,40 @@ var dog = document.getElementById("Dog");
 var pinguin = document.getElementById("Pinguin");
 var ott = document.getElementById("Ott");
 var panda = document.getElementById("Panda");
-var already;
 
 document.getElementById("Motiv").onchange = function(){
 	loadPic(this.selectedIndex);
+}
+
+document.getElementById("Color").onchange = function(){
+	switch(this.selectedIndex){
+		case 0:
+			changeColor('red');
+			break;
+		case 1:
+			changeColor('green');
+			break;
+		case 2:
+			changeColor('blue');
+			break;
+		case 3:
+			changeColor('black');
+			break;
+		case 4:
+			changeColor('white');
+			break;
+	}
+	
+}
+
+function changeColor(color){
+	document.getElementById('Color').style.background = color;
+	document.getElementById('kidName').style.color = color;
+	document.getElementById('kidName2').style.color = color;
+	document.getElementById('kidName3').style.color = color;
+	document.getElementById('kidName4').style.color = color;
+	document.getElementById('kidName5').style.color = color;
+	
 }
 
 function loadPic(selected){
@@ -56,5 +86,5 @@ function theFunction(e)
         document.getElementById("Motiv").selectedIndex = 5;
 		loadPic(5);
         break;
-}
+	}
 }
