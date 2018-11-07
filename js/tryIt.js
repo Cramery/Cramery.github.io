@@ -30,15 +30,15 @@ document.getElementById("Color").onchange = function(){
 	
 }
 
-function changeColor(color){
-	document.getElementById('Color').style.background = color;
+function changeColor(farb){
+	document.getElementById('Color').style.background = farb;
 	
-	document.getElementById('kidNameTwo').style.color = color;
-	document.getElementById('kidName').style.color = color;
-	document.getElementById('kidName3').style.color = color;
-	document.getElementById('kidName4').style.color = color;
-	document.getElementById('kidName5').style.color = color;
-	document.getElementById('kidName6').style.color = color;
+	document.getElementById("kidTwo").style.color = farb;
+	document.getElementById("kidName").style.color = farb;
+	document.getElementById('kidName3').style.color = farb;
+	document.getElementById('kidName4').style.color = farb;
+	document.getElementById('kidName5').style.color = farb;
+	document.getElementById('kidName6').style.color = farb;
 }
 
 function loadPic(selected){
