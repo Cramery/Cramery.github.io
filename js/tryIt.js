@@ -33,7 +33,7 @@ document.getElementById("Color").onchange = function(){
 function changeColor(color){
 	document.getElementById('Color').style.background = color;
 	document.getElementById('kidName').style.color = color;
-	document.getElementById('kidName2').style.color = color;
+	document.getElementById('kidNameTwo').style.color = color;
 	document.getElementById('kidName3').style.color = color;
 	document.getElementById('kidName4').style.color = color;
 	document.getElementById('kidName5').style.color = color;
