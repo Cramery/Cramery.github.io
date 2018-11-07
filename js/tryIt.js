@@ -32,7 +32,6 @@ document.getElementById("Color").onchange = function(){
 
 function changeColor(farb){
 	document.getElementById('Color').style.background = farb;
-	
 	document.getElementById("kidTwo").style.color = farb;
 	document.getElementById("kidName").style.color = farb;
 	document.getElementById('kidName3').style.color = farb;
